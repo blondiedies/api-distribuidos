@@ -134,3 +134,4 @@ app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
 if __name__ == '__main__':
     app.run(debug=True)
+print('tst')
