@@ -1,6 +1,7 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10
 
+RUN mkdir /app
 # Set the working directory in the container to /app
 WORKDIR /app
 
@@ -11,4 +12,5 @@ ADD . /app
 EXPOSE 80
 
 # Run app.py when the container launches
-CMD ["python", "src/app.py"]
+CMD ["python", "app.py"]
+
