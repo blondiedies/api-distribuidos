@@ -1,6 +1,10 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10
 
+# proxy
+ENV http_proxy http://proxylab.ucab.edu.ve:3128
+ENV https_proxy http://proxylab.ucab.edu.ve:3128
+
 # Set the working directory in the container to /app
 WORKDIR /app
 
